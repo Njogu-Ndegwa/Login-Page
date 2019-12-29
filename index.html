@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="post" id="login-form" class="login-form" autocomplete="off">
+        <h1 class="a11y-hidden">Login form</h1>
+        <figure aria-hidden="true">
+          <div class="person-body"></div>
+          <div class="neck skin"></div>
+          <div class="head skin">
+            <div class="eyes"></div>
+            <div class="mouth"></div>
+          </div>
+          <div class="hair"></div>
+          <div class="ears"></div>
+          <div class="shirt-1"></div>
+          <div class="shirt-2"></div>
+        </figure>
+        <div aria-live="polite" class="error-message" id="error-message"></div>
+        <div>
+          <label class="required">
+            <span>Username</span>
+            <input type="text" name="username" id="username" placeholder="Username" required />
+          </label>
+        </div>
+        <div>
+          <label class="required">
+            <span>Password</span>
+            <input type="password" name="password" id="password" placeholder="Password" required minlength="8" />
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="checkbox" name="show-password" id="show-password" class="a11y-hidden" />
+            <span class="checkbox-label">Show Password</span>
+          </label>
+        </div>
+        <input type="submit" value="Log In" name="submit" id="submit" />
+        <div class="forgot-password">
+          <a href="#">Forgot password?</a>
+        </div>
+      </form>
+      
+  </body>
+</html>
